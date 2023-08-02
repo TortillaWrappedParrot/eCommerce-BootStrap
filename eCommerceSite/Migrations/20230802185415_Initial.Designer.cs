@@ -11,7 +11,7 @@ using eCommerceSite.Data;
 namespace eCommerceSite.Migrations
 {
     [DbContext(typeof(VideoGameContext))]
-    [Migration("20230802184359_Initial")]
+    [Migration("20230802185415_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
