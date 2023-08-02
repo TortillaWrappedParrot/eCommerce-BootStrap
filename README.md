@@ -1,5 +1,5 @@
 # Super Commerce Site
-![Contributers](https://img.shields.io/github/contributors/NullPointer1331/GameShopManager) ![Issues](https://img.shields.io/github/issues/NullPointer1331/GameShopManager)
+![Issues](https://img.shields.io/github/issues/TortillaWrappedParrot/eCommerce-BootStrap)
 
 
 ## Super Commerce Site
