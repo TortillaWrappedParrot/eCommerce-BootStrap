@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "0l/Wv7MNrPENTqoh0UjyfycAcZFTRwNTPQUHRmXFnagaHOW2qs+TabOwBLodOY043+25XQjUhKRBXNOPQgIU9Q==",
+  "dgSpecHash": "0mNxpsCKkwLifMIsy+DV5Kh1V+0KHBpakWRgUv8DOgNtoNF8xxWSzOkjE2QzRLyMLzyJVaUlAIv0Yrm2ozWvQA==",
   "success": true,
   "projectFilePath": "C:\\Users\\parro\\OneDrive\\Documents\\GitHub\\eCommerce-BootStrap\\eCommerceSite\\eCommerceSite\\eCommerceSite.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\parro\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\parro\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\parro\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\6.0.1\\microsoft.aspnetcore.diagnostics.entityframeworkcore.6.0.1.nupkg.sha512",
     "C:\\Users\\parro\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\parro\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\parro\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.2\\microsoft.data.sqlclient.5.0.2.nupkg.sha512",
