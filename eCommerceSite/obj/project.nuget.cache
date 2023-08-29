@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wxsEjGTKYt/rkpBPOSOHhRmkS4z6/ECbBshzdD5MjCeWF8beSWgTOuzgKXUJ9co7FM+nUW5CWib60UJmZrR43g==",
+  "dgSpecHash": "/E6YFKHAEcd/cTMXjoec8cxCqaYn+c0BLlviPsWPTEJcJ0cTAVpaSEmTpyBJxnJhRMOxqOzkiNgSFBuH8xOjhw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\parro\\OneDrive\\Documents\\GitHub\\eCommerce-BootStrap\\eCommerceSite\\eCommerceSite.csproj",
+  "projectFilePath": "C:\\Users\\parro\\Source\\Repos\\TortillaWrappedParrot\\eCommerce-Website\\eCommerceSite\\eCommerceSite.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\parro\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\parro\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\parro\\OneDrive\\Documents\\GitHub\\eCommerce-BootStrap\\eCommerceSite\\eCommerceSite.csproj": {}
+    "C:\\Users\\parro\\Source\\Repos\\TortillaWrappedParrot\\eCommerce-Website\\eCommerceSite\\eCommerceSite.csproj": {}
   },
   "projects": {
-    "C:\\Users\\parro\\OneDrive\\Documents\\GitHub\\eCommerce-BootStrap\\eCommerceSite\\eCommerceSite.csproj": {
+    "C:\\Users\\parro\\Source\\Repos\\TortillaWrappedParrot\\eCommerce-Website\\eCommerceSite\\eCommerceSite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\parro\\OneDrive\\Documents\\GitHub\\eCommerce-BootStrap\\eCommerceSite\\eCommerceSite.csproj",
+        "projectUniqueName": "C:\\Users\\parro\\Source\\Repos\\TortillaWrappedParrot\\eCommerce-Website\\eCommerceSite\\eCommerceSite.csproj",
         "projectName": "eCommerceSite",
-        "projectPath": "C:\\Users\\parro\\OneDrive\\Documents\\GitHub\\eCommerce-BootStrap\\eCommerceSite\\eCommerceSite.csproj",
+        "projectPath": "C:\\Users\\parro\\Source\\Repos\\TortillaWrappedParrot\\eCommerce-Website\\eCommerceSite\\eCommerceSite.csproj",
         "packagesPath": "C:\\Users\\parro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\parro\\OneDrive\\Documents\\GitHub\\eCommerce-BootStrap\\eCommerceSite\\obj\\",
+        "outputPath": "C:\\Users\\parro\\Source\\Repos\\TortillaWrappedParrot\\eCommerce-Website\\eCommerceSite\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
