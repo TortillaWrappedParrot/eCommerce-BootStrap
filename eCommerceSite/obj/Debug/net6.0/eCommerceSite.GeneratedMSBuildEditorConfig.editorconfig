@@ -9,11 +9,11 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = eCommerceSite
 build_property.RootNamespace = eCommerceSite
-build_property.ProjectDir = C:\Users\parro\source\repos\TortillaWrappedParrot\eCommerce-Website\eCommerceSite\
+build_property.ProjectDir = C:\Users\parro\Source\Repos\TortillaWrappedParrot\eCommerce-Website\eCommerceSite\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\parro\source\repos\TortillaWrappedParrot\eCommerce-Website\eCommerceSite
+build_property.MSBuildProjectDirectory = C:\Users\parro\Source\Repos\TortillaWrappedParrot\eCommerce-Website\eCommerceSite
 build_property._RazorSourceGeneratorDebug = 
 
 [C:/Users/parro/Source/Repos/TortillaWrappedParrot/eCommerce-Website/eCommerceSite/Views/Games/Create.cshtml]
