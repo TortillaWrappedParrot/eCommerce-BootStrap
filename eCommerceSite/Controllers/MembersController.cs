@@ -1,6 +1,7 @@
 ﻿using eCommerceSite.Data;
 using eCommerceSite.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace eCommerceSite.Controllers
 {
@@ -60,6 +61,8 @@ namespace eCommerceSite.Controllers
                 {
                     return RedirectToAction("Index", "Home");
                 }
+
+                ModelState.AddModelError(String.Empty, "Credentials not found");
             }
             //Return if no login or model isn't valid
             return View(loginModel);
