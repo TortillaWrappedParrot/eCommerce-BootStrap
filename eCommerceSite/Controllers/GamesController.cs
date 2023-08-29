@@ -1,6 +1,7 @@
 ﻿using eCommerceSite.Data;
 using eCommerceSite.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace eCommerceSite.Controllers
 {
@@ -11,6 +12,13 @@ namespace eCommerceSite.Controllers
         public GamesController(VideoGameContext context)
         {
             _context = context;
+        }
+
+        public async Task<IActionResult> Index()
+        {
+            List<Game> games = await (from game in _context.Games
+                                      select game).ToListAsync();
+            return View(games);
         }
 
         [HttpGet]
