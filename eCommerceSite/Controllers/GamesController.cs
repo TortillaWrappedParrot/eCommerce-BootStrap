@@ -68,5 +68,36 @@ namespace eCommerceSite.Controllers
 
             return View(gameModel);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> Delete(int id)
+        {
+            Game? targetGame = await _context.Games.FindAsync(id);
+
+            if (targetGame == null)
+            {
+                return NotFound();
+            }
+
+            return View(targetGame);
+        }
+
+        [HttpPost, ActionName("Delete")]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            Game? gameToDelete = await _context.Games.FindAsync(id);
+
+            if (gameToDelete != null)
+            {
+                _context.Games.Remove(gameToDelete);
+                await _context.SaveChangesAsync();
+
+                TempData["Message"] = gameToDelete.Title + " was deleted successfully";
+                return RedirectToAction("Index");
+            }
+
+            TempData["Message"] = "This game was already deleted";
+            return RedirectToAction("Index");
+        }
     }
 }
