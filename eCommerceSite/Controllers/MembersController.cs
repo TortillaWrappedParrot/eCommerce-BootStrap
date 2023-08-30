@@ -35,6 +35,7 @@ namespace eCommerceSite.Controllers
                 _context.Members.Add(newMember);
                 await _context.SaveChangesAsync();
 
+                LogUserIn(newMember.Email);
                 return RedirectToAction("Index", "Home");
             }
 
@@ -59,7 +60,7 @@ namespace eCommerceSite.Controllers
                                select member).SingleOrDefault();
                 if (meb != null)
                 {
-                    HttpContext.Session.SetString("Email", loginModel.Email);
+                    LogUserIn(loginModel.Email);
                     return RedirectToAction("Index", "Home");
                 }
 
@@ -67,6 +68,18 @@ namespace eCommerceSite.Controllers
             }
             //Return if no login or model isn't valid
             return View(loginModel);
+        }
+
+        private void LogUserIn(string email)
+        {
+            HttpContext.Session.SetString("Email", email);
+        }
+
+        [HttpGet]
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Clear();
+            return RedirectToAction("Index", "Home");
         }
     }
 }
