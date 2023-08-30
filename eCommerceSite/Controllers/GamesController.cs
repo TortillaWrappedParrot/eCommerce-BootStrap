@@ -16,11 +16,6 @@ namespace eCommerceSite.Controllers
 
         public async Task<IActionResult> Index()
         {
-            if (HttpContext.Session.GetString("Email") == null) 
-            {
-                return RedirectToAction("Login", "Members");
-            }
-
             List<Game> games = await (from game in _context.Games
                                       select game).ToListAsync();
             return View(games);
