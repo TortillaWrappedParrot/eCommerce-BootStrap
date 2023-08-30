@@ -16,22 +16,23 @@ namespace eCommerceSite.Controllers
 
         public async Task<IActionResult> Index(int? id)
         {
-            const int NumGamesToDisplayPerPage = 3;
-            const int PageOffset = 1; // Need a page offset to use current page and figure out, num games to skip
+            const int numGamesToDisplayPerPage = 3;
+            const int pageOffset = 1;
 
-            int currPage = id ?? 1; // Set currPage to id if it has a value, otherwise use 1
+            int curPage = id ?? 1; // Set curPage to 1 or current page num
 
             int totalNumOfProducts = await _context.Games.CountAsync();
-            double maxNumPages = Math.Ceiling((double)totalNumOfProducts / NumGamesToDisplayPerPage);
-            int lastPage = Convert.ToInt32(maxNumPages); // Rounding pages up, to next whole page number
+            double maxNumPages = Math.Ceiling((double)totalNumOfProducts / numGamesToDisplayPerPage);
+            int lastPage = Convert.ToInt32(maxNumPages); // Round page num up
 
             List<Game> games = await (from game in _context.Games
                                       select game)
-                                     .Skip(NumGamesToDisplayPerPage * (currPage - PageOffset))
-                                     .Take(NumGamesToDisplayPerPage)
+                                     .Skip(numGamesToDisplayPerPage * (curPage - pageOffset))
+                                     .Take(numGamesToDisplayPerPage)
                                      .ToListAsync();
 
-            return View(games);
+            GameCatalogViewModel catalogModel = new(games, lastPage, curPage);
+            return View(catalogModel);
         }
 
         [HttpGet]
