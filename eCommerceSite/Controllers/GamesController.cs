@@ -16,7 +16,7 @@ namespace eCommerceSite.Controllers
 
         public async Task<IActionResult> Index(int? id)
         {
-            const int numGamesToDisplayPerPage = 3;
+            const int numGamesToDisplayPerPage = 3; //Games to display per page
             const int pageOffset = 1;
 
             int curPage = id ?? 1; // Set curPage to 1 or current page num
@@ -25,6 +25,7 @@ namespace eCommerceSite.Controllers
             double maxNumPages = Math.Ceiling((double)totalNumOfProducts / numGamesToDisplayPerPage);
             int lastPage = Convert.ToInt32(maxNumPages); // Round page num up
 
+            //Get needed games for page
             List<Game> games = await (from game in _context.Games
                                       select game)
                                      .Skip(numGamesToDisplayPerPage * (curPage - pageOffset))
