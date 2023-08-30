@@ -35,6 +35,7 @@ namespace eCommerceSite.Controllers
                 _context.Members.Add(newMember);
                 await _context.SaveChangesAsync();
 
+                //Log user in after creating an account
                 LogUserIn(newMember.Email);
                 return RedirectToAction("Index", "Home");
             }
@@ -70,6 +71,7 @@ namespace eCommerceSite.Controllers
             return View(loginModel);
         }
 
+        //Set session email to provided email
         private void LogUserIn(string email)
         {
             HttpContext.Session.SetString("Email", email);
@@ -78,6 +80,7 @@ namespace eCommerceSite.Controllers
         [HttpGet]
         public IActionResult Logout()
         {
+            //Clear session and return to home page
             HttpContext.Session.Clear();
             return RedirectToAction("Index", "Home");
         }
