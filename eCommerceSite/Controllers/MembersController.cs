@@ -59,6 +59,7 @@ namespace eCommerceSite.Controllers
                                select member).SingleOrDefault();
                 if (meb != null)
                 {
+                    HttpContext.Session.SetString("Email", loginModel.Email);
                     return RedirectToAction("Index", "Home");
                 }
 
